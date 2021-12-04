@@ -30,7 +30,10 @@ data(){
   //Eski ve yeni bilgileri izleyebiliyoruz
   watch :{
   counter(newValue, oldValue){
-      console.log(oldValue, "",newValue);
+      console.log("Counter",oldValue, "=>",newValue);
+  },
+  getCounterResult(newValue,oldValue){
+    console.log("Result",oldValue,"=>",newValue);
   }    
   }
   
